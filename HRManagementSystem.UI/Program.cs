@@ -13,7 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
         .AddCookie(opt =>
         {
-            opt.Cookie.Name = "HRManagementSystemCookie";
+            opt.Cookie.Name = "HRManagementSystemCookies";
             opt.Cookie.HttpOnly = true;
             opt.Cookie.SameSite = SameSiteMode.Strict;
             opt.Cookie.SecurePolicy = CookieSecurePolicy.SameAsRequest;
